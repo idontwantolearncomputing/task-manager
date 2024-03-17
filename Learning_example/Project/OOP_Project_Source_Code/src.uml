@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/qixua/IdeaProjects/OOP-Project2/Project/OOP_Project_Source_Code/src</OriginalElement>
+  <nodes>
+    <node x="78.0" y="1238.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.InvalidSubtaskException</node>
+    <node x="-220.0" y="1238.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.TaskNotFoundException</node>
+    <node x="1070.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.CriterionNameNullException</node>
+    <node x="375.0" y="1238.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.TaskMapIsEmpty</node>
+    <node x="-220.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.CritersionNotFoundException</node>
+    <node x="250.0" y="564.0">hk.edu.polyu.comp.comp2021.tms.view.TMS_GUI</node>
+    <node x="-220.0" y="564.0">hk.edu.polyu.comp.comp2021.tms.controller.TMS</node>
+    <node x="1389.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.InvalidPropertyException</node>
+    <node x="564.0" y="564.0">hk.edu.polyu.comp.comp2021.tms.view.Application</node>
+    <node x="1122.0" y="564.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.TaskCannotReomoveException</node>
+    <node x="430.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.InvalidPrerequisiteException</node>
+    <node x="777.0" y="564.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.CriterionAlreadyExistsException</node>
+    <node x="109.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.TaskAlreadyExistsException</node>
+    <node x="614.0" y="-421.0">hk.edu.polyu.comp.comp2021.tms.model.SimpleTask</node>
+    <node x="264.0" y="-458.0">hk.edu.polyu.comp.comp2021.tms.model.CompositeTasks</node>
+    <node x="1006.0" y="-458.0">hk.edu.polyu.comp.comp2021.tms.model.Criterion</node>
+    <node x="-220.0" y="-458.0">hk.edu.polyu.comp.comp2021.tms.model.TaskManager</node>
+    <node x="477.75" y="-271.0">hk.edu.polyu.comp.comp2021.tms.model.Task</node>
+    <node x="750.0" y="1130.0">hk.edu.polyu.comp.comp2021.tms.model.exceptions.TaskIsPrerequisiteException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hk.edu.polyu.comp.comp2021.tms.model.CompositeTasks" target="hk.edu.polyu.comp.comp2021.tms.model.Task" relationship="GENERALIZATION">
+      <point x="0.0" y="68.5" />
+      <point x="429.0" y="-296.0" />
+      <point x="608.25" y="-296.0" />
+      <point x="0.0" y="-308.5" />
+    </edge>
+    <edge source="hk.edu.polyu.comp.comp2021.tms.model.SimpleTask" target="hk.edu.polyu.comp.comp2021.tms.model.Task" relationship="GENERALIZATION">
+      <point x="0.0" y="31.5" />
+      <point x="787.5" y="-296.0" />
+      <point x="608.25" y="-296.0" />
+      <point x="0.0" y="-308.5" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="0.5424395727937044" showDependencies="false" x="947.4103626943004" y="372.84715025906735" />
+  <SelectedNodes>
+    <node>hk.edu.polyu.comp.comp2021.tms.model.SimpleTask</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>字段</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

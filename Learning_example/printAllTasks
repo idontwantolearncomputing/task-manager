@@ -1,0 +1,4 @@
+simpletask Coffee-Powder "Add-coffee-powder" [] 2.0
+simpletask Boil-Water "Boil-some-water" [] 1.0
+compositeTask Make-Coffee "Make-coffee" [] 0.0
+simpletask Sugar "Add-sugar" [Boil-Water, Coffee-Powder] 1.0

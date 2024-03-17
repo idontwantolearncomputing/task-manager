@@ -1,0 +1,92 @@
+createSimpleTask Boil-Water "Boil-some-water" 1.0 ,
+createSimpleTask Coffee-Powder "Add-coffee-powder" 2.0 ,
+createSimpleTask Sugar "Add-sugar" 1.0 Boil-Water Coffee-Powder
+
+createCompositeTask Make-Coffee "Make-coffee" Boil-Water Coffee-Powder Sugar
+createSimpleTask a "Boil-some-water" 1.0 ,
+createSimpleTask b "Add-coffee-powder" 2.0 ,
+createSimpleTask c "Add-coffee-powder" 5.0 ,
+createSimpleTask abc "Add-sugar" 1.0 a b c
+createCompositeTask abcabc "Make-coffee" abc a b
+deleteTask Boil-Water
+
+changeTask Coffee-Powder description "Add fine coffee powder"
+changeTask Sugar duration 0.5
+
+reportDuration Make-Coffee
+reportearliestfinishtime Make-Coffee
+reportDuration abcabc
+createSimpleTask Boil-Water "Boil-some-water" 1.0 ,
+createSimpleTask Coffee-Powder "Add-coffee-powder" 2.0 ,
+createSimpleTask Sugar "Add-sugar" 1.0 Boil-Water Coffee-Powder
+defineBasicCriterion Criterion1 name contain Sugar
+defineBasicCriterion Criterion2 description contain "Add-coffee-powder"
+defineBinaryCriterion Criterion111 Criterion1 && Criterion2
+defineNegatedCriterion NegCriterion111 Criterion111
+defineBasicCriterion Criterion3 prerequisites contain Boil-Water
+defineBasicCriterion Criterion4 subtasks contain Boil-Water
+Search Criterion1
+Search Criterion2
+Search Criterion3
+Search Criterion4
+definenegatedcriterion Criterion11 Criterion1
+definenegatedcriterion Criterion22 Criterion2
+definenegatedcriterion Criterion33 Criterion3
+definenegatedcriterion Criterion44 Criterion4
+Search Criterion11
+Search Criterion22
+Search Criterion33
+Search Criterion44
+
+defineBinaryCriterion Criterion111 Criterion1 && Criterion2
+defineBinaryCriterion Criterion222 Criterion3 && Criterion4
+defineBinaryCriterion Criterion1111 Criterion1 || Criterion2
+defineBinaryCriterion Criterion2222 Criterion3 || Criterion4
+defineBinaryCriterion Criterion333 Criterion111 || Criterion222
+defineBinaryCriterion Criterion444 Criterion3 || Criterion4
+Search Criterion111
+Search Criterion222
+Search Criterion333
+Search Criterion444
+
+
+defineNegatedCriterion NegCriterion1 Criterion1
+defineBinaryCriterion BinaryCriterion1 Criterion1 && NegCriterion1
+printallcriteria
+print Make-Coffee
+printAllCriteria
+printAllTasks
+
+Store /Users/kiwi/Desktop/TaskManager.txt
+
+Invalid commands:
+createSimpleTask Boil-Water "Boil-some-water" 1.0
+createCompositeTask Make-Another-Coffee "Make-coffee" 5.0 Shit
+createcompositetask
+createsimpletask abc abc abc abc
+reportduration Sugar
+reportearliestfinishtime Sugar
+
+
+simpletask Boil-water Description 1.0 [,]
+simpletask Sugar Description 1.0 [,]
+Compositetask Make-coffee Description [Boil-water,Sugar]
+
+store C:\Users\Jerom\Desktop\A1_22100709d_SunChang\output.txt
+load C:\Users\Jerom\Desktop\A1_22100709d_SunChang\output.txt
+
+
+
+defineBasicCriterion Criterion1 name contain Sugar
+defineBasicCriterion Criterion3 duration > 0
+definenegatedcriterion Criterion11 Criterion1
+defineBasicCriterion Criterion2 description contain "Add-coffee-powder"
+defineBinaryCriterion Criterion111 Criterion1 && Criterion2
+store C:\Users\qixua\OneDrive\桌面\CaoYixin.txt
+load C:\Users\qixua\OneDrive\桌面\CaoYixin.txt
+
+Criterion2: description contains "Add-coffee-powder"
+Criterion111: (name contains Sugar) && (description contains "Add-coffee-powder")
+Criterion1: name contains Sugar
+Criterion11: name contains Not Sugar
+IsPrimitive: IsPrimitive
